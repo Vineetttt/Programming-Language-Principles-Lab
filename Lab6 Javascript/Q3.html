@@ -1,0 +1,24 @@
+﻿<!-- Write a program to take array and filter the array into even array and odd array 
+using anonymous function in javascript. Create GUI for the same. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h4>Vineet Chotaliya - 60009210051</h4>
+    <h4 id="original"></h4>
+    <h4 id="even"></h4>
+    <h4 id="odd"></h4>
+    <script>
+        var size = prompt("Enter the size of array: ");
+        var arr = [];
+        for(var i=0; i<size; i++) {
+            arr[i] = prompt('Enter Element ' + (i+1)+": ");
+        }
+        var even = arr.filter((n)=>n%2 == 0);
+        var odd = arr.filter((n)=>n%2 != 0);
+        document.getElementById('original').innerHTML = 'Original Array : ' + arr;
+        document.getElementById('even').innerHTML = 'Even elements : ' + even;
+        document.getElementById('odd').innerHTML = 'Odd elements : ' + odd;
+    </script>
+</body>
+</html>
